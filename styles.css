@@ -1,0 +1,20 @@
+#logoBar{
+  width: 30vw;
+  height: 100vh;
+}
+#siteLogo{
+  width: 100%;
+}
+body {
+  display: flex;
+}
+#staffGallery{
+  width: 70vw;
+  display: inherit;
+
+}
+.galleryImage{
+  width: 100%;
+  height: auto;
+  height: 300px;
+}
