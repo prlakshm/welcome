@@ -60,7 +60,7 @@ h6{
 @media only screen and (max-width: 600px) {
   #logoBar{
     width: 70vw;
-    height: 80vh;
+    height: auto;
   }
   body{
     flex-direction: column;
