@@ -1,3 +1,8 @@
+@font-face {
+  font-family: pooh;
+  src: url(pooh.ttf);
+}
+
 #logoBar{
   width: 30vw;
   height: 100vh;
@@ -7,14 +12,64 @@
 }
 body {
   display: flex;
+  justify-content: center;
+  background-color: #dd4018;
 }
 #staffGallery{
   width: 70vw;
-  display: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
 
 }
 .galleryImage{
   width: 100%;
   height: auto;
-  height: 300px;
+}
+h1{
+  font-family: pooh;
+  font-size: 3rem;
+  letter-spacing: .1rem;
+  color:	#ffe597;
+  text-align: center;
+}
+h3{
+  font-family: pooh;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  color:	#ffe597;
+  text-align: center;
+}
+h6{
+  font-family: pooh;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  color:	black;
+  text-align: center;
+  margin: auto;
+}
+.card{
+  background-color:bisque;
+  margin: 1.5vh 5vh;
+  padding: 1vh 0vh;
+  border: 0.5rem solid #ffbeae;
+  border-radius: 2rem;
+
+}
+@media only screen and (max-width: 600px) {
+  #logoBar{
+    width: 70vw;
+  }
+  body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #staffGallery{
+    margin-top: -7rem;
+    grid-template-columns: 1fr; 
+  }
+  .card{
+    margin: 1rem 2rem;
+  }
 }
